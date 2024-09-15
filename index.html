@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bird Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Welcome to the Bird Gallery</h1>
+            <p>Explore a collection of beautiful bird images and learn more about each species.</p>
+        </section>
+
+        <section id="gallery" class="gallery-section">
+            <h2>Bird Gallery</h2>
+            <div id="gallery" class="gallery"></div>
+            <div id="pagination" class="pagination"></div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>About Us</h2>
+            <p>This gallery is dedicated to showcasing the beauty of birds from around the world. Each image is accompanied by a brief description to help you learn more about these incredible creatures.</p>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or feedback, feel free to reach out to us at <a href="mailto:info@birdgallery.com">info@birdgallery.com</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Bird Gallery. All rights reserved.</p>
+    </footer>
+
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modal-img" class="modal-img" src="" alt="">
+        <div id="modal-description" class="modal-description"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
